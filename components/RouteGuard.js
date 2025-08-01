@@ -12,7 +12,6 @@ export default function RouteGuard({ children }) {
     const [favouritesList, setFavouritesList] = useAtom(favouritesAtom);
     const [searchHistory, setSearchHistory] = useAtom(searchHistoryAtom);
 
-    // Use useCallback to memoize the function and prevent unnecessary re-renders
     const updateAtoms = useCallback(async () => {
         const token = getToken();
         if (token) {
@@ -29,7 +28,7 @@ export default function RouteGuard({ children }) {
         if (PUBLIC_PATHS.includes(path)) {
             updateAtoms();
         }
-    }, [router.pathname, updateAtoms]); // Added updateAtoms to dependency array
+    }, [router.pathname, updateAtoms]); 
 
     return <>{children}</>;
 }
