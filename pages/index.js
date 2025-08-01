@@ -7,7 +7,7 @@
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
 * 
 *  Name: Matias Alejandro Jara Martell Student ID: 151838232 Date: 2025-07-31
-*
+*  Vercel App (Deployed) Link: https://a6-web-app-git-main-matias-jaras-projects.vercel.app
 ********************************************************************************/
 
 import Image from 'react-bootstrap/Image';
